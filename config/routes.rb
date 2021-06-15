@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
  
-post "/register", to: "auth#register"
-post "/login", to: "auth#login"
+    post "/login", to: "users#login"
+    post "/signup", to: "users#signup"
 
 end
