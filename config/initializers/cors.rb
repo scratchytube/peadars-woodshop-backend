@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins '*'
+    origins '*' # when you deploy make sure you change this to forntend domain name eg. origins 'briansahotahehe.com'
 
     resource '*',
       headers: :any,
