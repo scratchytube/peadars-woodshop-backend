@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+    before_action :authenticate, only: [:show, :update]
 
     def login
         user = User.find_by(username: params[:username])
@@ -18,6 +19,11 @@ class UsersController < ApplicationController
         else
             render json: { errors: user.errors.full_messages }, status: :unauthorized
         end
+    end
+
+    def show 
+
+        render json: @current_user
     end
 
     private
