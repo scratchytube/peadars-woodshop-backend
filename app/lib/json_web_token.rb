@@ -1,3 +1,5 @@
+# lib/json_web_token.rb
+
 # frozen_string_literal: true
 require 'net/http'
 require 'uri'
