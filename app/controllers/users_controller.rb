@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    before_action :authenticate, only: [:show, :update]
+    before_action :authenticate, only: [:show]
 
     def login
         user = User.find_by(username: params[:username])
