@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2021_06_14_191448) do
     t.string "name"
     t.integer "price"
     t.string "description"
+    t.string "category"
     t.integer "stock"
     t.string "images"
     t.boolean "featured"
