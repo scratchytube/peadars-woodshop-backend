@@ -3,6 +3,8 @@ puts 'destroying the users yay'
 User.destroy_all
 puts 'go away beautiful objects'
 Product.destroy_all
+puts 'destroying orders'
+Order.destroy_all
 
 User.create!(
     email: 'bpsahota@gmail.com',
@@ -116,6 +118,24 @@ dopeProducts = [
     },
 ]
 
-dopeProducts.each do |product_hash|
+    dopeProducts.each do |product_hash|
     Product.create!(product_hash)
     end
+
+    dopeOrders = [
+        {
+            user_id: 1,
+            checked_out: false
+        }
+    ]
+
+    dopeOrders.each do |order_hash|
+        Order.create!(order_hash)
+    end
+
+    dopeOrdersWithProducts = [
+        {
+            product_id: 1,
+            order_id: 1,
+        }
+    ]
