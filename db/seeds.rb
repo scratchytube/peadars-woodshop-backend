@@ -13,6 +13,11 @@ User.create!(
     password: "hehe"
 )
 
+User.create!(
+    email: 'pbond22@hotmail.com',
+    password: 'haha'
+)
+
 dopeProducts = [
     {
         name: 'Wood Samaritan',
@@ -76,7 +81,6 @@ dopeProducts = [
         images: {
             'pic1': 'https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/165122468_1962274587247235_5179647154108324578_n.jpg?tp=1&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=111&_nc_ohc=_jNi0C-BkGcAX-zGEPI&tn=VVcbuiOWRnPL6OuB&edm=AP_V10EBAAAA&ccb=7-4&oh=84d6721b405f24d9a2262e2cd84db149&oe=60D49B0E&_nc_sid=4f375e',
             'pic2': 'https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/163999107_100807855428531_8061946134400587432_n.jpg?tp=1&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=103&_nc_ohc=lhxxWtvk3lEAX8SQZve&edm=AP_V10EBAAAA&ccb=7-4&oh=92547a7b017e6dda80d6422d97fae75d&oe=60D3C265&_nc_sid=4f375e',
-            # 'pic3': ''
         }
     },
     {
@@ -89,7 +93,6 @@ dopeProducts = [
         images: {
             'pic1': 'https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/162123629_196182461907816_7655021805332260687_n.jpg?tp=1&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=100&_nc_ohc=DCcEAjfpQkEAX8mqR1z&edm=AP_V10EBAAAA&ccb=7-4&oh=d9c2e25aed8106fe07036dcdf8e5ff82&oe=60D4126F&_nc_sid=4f375e',
             'pic2': 'https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/161829166_183346010057684_6614409104019413233_n.jpg?tp=1&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=108&_nc_ohc=xj9XTE7Mnz4AX__KM5v&tn=VVcbuiOWRnPL6OuB&edm=AP_V10EBAAAA&ccb=7-4&oh=07fb092703245e30b91c6f22539dfd4e&oe=60D40C30&_nc_sid=4f375e',
-            # 'pic3': ''
         }
     },
     {
@@ -102,7 +105,6 @@ dopeProducts = [
         images: {
             'pic1': 'https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/159305598_237320204772553_5640494129495717945_n.jpg?tp=1&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=101&_nc_ohc=tYslUHqWzQIAX94MRGN&edm=AP_V10EBAAAA&ccb=7-4&oh=80e5cae6a89a74d10820733d707aec33&oe=60D4D580&_nc_sid=4f375e',
             'pic2': 'https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/159292890_132712388774565_3455858941071301161_n.jpg?tp=1&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=109&_nc_ohc=M25Neu8wUmIAX_CCBO_&edm=AP_V10EBAAAA&ccb=7-4&oh=9884b18f8d3db3bc5e8d162fd72d97ae&oe=60D3CDCA&_nc_sid=4f375e',
-            # 'pic3': ''
         }
     },
     {
@@ -115,7 +117,41 @@ dopeProducts = [
         images: {
             'pic1': 'https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/145024103_2146350285502202_354433034065294562_n.jpg?tp=1&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=102&_nc_ohc=_GhFPafVUpkAX8V-eSy&edm=AP_V10EBAAAA&ccb=7-4&oh=74572427ba94d1d725d7990f6b1fc5da&oe=60D45839&_nc_sid=4f375e',
             'pic2': 'https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/145501715_231794488603809_2154238589918912616_n.jpg?tp=1&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=109&_nc_ohc=xtTK0yDlTbsAX-gRWx4&tn=VVcbuiOWRnPL6OuB&edm=AP_V10EBAAAA&ccb=7-4&oh=aec85ccdad34d2e2914d8aabe3293c83&oe=60D468A4&_nc_sid=4f375e',
-            # 'pic3': ''
+        }
+    },
+    {
+        name: 'Celtic Peadar',
+        price: 20000,
+        description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+        category: 'Plate',
+        stock: 1,
+        featured: false,
+        images: {
+            'pic1': 'https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/108122343_611595379469149_2446243995860131609_n.jpg?tp=1&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=101&_nc_ohc=SSEnZ9QeCzcAX9S9F_0&edm=AP_V10EBAAAA&ccb=7-4&oh=a7bf7b13d5647304d53e14349445378d&oe=60D46D55&_nc_sid=4f375e',
+            'pic2': 'https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p750x750/107443892_271144211006025_943333741104063534_n.jpg?tp=1&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=109&_nc_ohc=QOx_yJYT4JYAX8BJKCZ&edm=AP_V10EBAAAA&ccb=7-4&oh=c8458ce317d724a249d9ea7d641fd513&oe=60D40CB4&_nc_sid=4f375e',
+        }
+    },
+    {
+        name: 'Urn me a dollar',
+        price: 20000,
+        description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+        category: 'Urn',
+        stock: 1,
+        featured: false,
+        images: {
+            'pic1': 'https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/117317144_403626790606113_8271076054463936562_n.jpg?tp=1&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=109&_nc_ohc=WjXSblnrSUQAX_-Qfda&edm=AP_V10EBAAAA&ccb=7-4&oh=dbe9705fdbcc0c4c71b91d5583174b42&oe=60D46725&_nc_sid=4f375e',
+        }
+    },
+    {
+        name: 'Mister Urn',
+        price: 20000,
+        description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+        category: 'Urn',
+        stock: 1,
+        featured: false,
+        images: {
+            'pic1': 'https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/117746996_318458886026751_8183533651992469486_n.jpg?tp=1&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=103&_nc_ohc=I_D6mpXSH4oAX8Ts7YM&edm=AP_V10EBAAAA&ccb=7-4&oh=cad037daf6622ad72395f6f8cabf96b1&oe=60D49C4F&_nc_sid=4f375e',
+        
         }
     },
 ]
