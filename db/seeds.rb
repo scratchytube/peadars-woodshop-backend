@@ -64,7 +64,7 @@ dopeProducts = [
         description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
         category: 'Platter',
         stock: 1,
-        featured: false,
+        featured: true,
         images: {
             'pic1': 'https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/147608891_256641139164388_259421746841223723_n.jpg?tp=1&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=104&_nc_ohc=E4DC4AORF3UAX_qWr3o&edm=AP_V10EBAAAA&ccb=7-4&oh=328d52cd4f94c6f773c5b1cf1bb161bd&oe=60D423CE&_nc_sid=4f375e',
             'pic2': 'https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/147521562_276513040535887_7555007478811501840_n.jpg?tp=1&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=107&_nc_ohc=cs-upYSmBhUAX8Mrsyc&edm=AP_V10EBAAAA&ccb=7-4&oh=d4d7aebaee26c237e076ac49f6c6f822&oe=60D461FA&_nc_sid=4f375e',
@@ -148,7 +148,7 @@ dopeProducts = [
         description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
         category: 'Urn',
         stock: 1,
-        featured: false,
+        featured: true,
         images: {
             'pic1': 'https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/117746996_318458886026751_8183533651992469486_n.jpg?tp=1&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=103&_nc_ohc=I_D6mpXSH4oAX8Ts7YM&edm=AP_V10EBAAAA&ccb=7-4&oh=cad037daf6622ad72395f6f8cabf96b1&oe=60D49C4F&_nc_sid=4f375e',
         
