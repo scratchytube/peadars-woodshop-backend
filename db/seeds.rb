@@ -5,6 +5,8 @@ puts 'go away beautiful objects'
 Product.destroy_all
 puts 'destroying orders'
 Order.destroy_all
+puts "now destroying product orders"
+ProductOrder.destroy_all
 
 User.create!(
     email: 'bpsahota@gmail.com',
@@ -139,3 +141,7 @@ dopeProducts = [
             order_id: 1,
         }
     ]
+
+    dopeOrdersWithProducts.each do |productOrders_hash|
+        ProductOrder.create!(productOrders_hash)
+    end

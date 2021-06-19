@@ -14,6 +14,12 @@ Rails.application.routes.draw do
             post "/orders", to: "orders#create"
             patch "/orders/:id/edit", to: "orders#update"
             delete "/orders/:id", to: "orders#delete"
+
+            get "/productorders", to: "product_orders#index"
+            get "/productorders/:id", to: "product_orders#show"
+            post "/productorders", to: "product_orders#create"
+            patch "/productorders/:id/edit", to: "product_orders#update"
+            delete "/productorders/:id", to: "product_orders#delete"
         end
     end
 
