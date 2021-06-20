@@ -6,7 +6,6 @@ class CreateProducts < ActiveRecord::Migration[6.0]
       t.string :description
       t.string :category
       t.integer :stock
-      t.string :images
       t.boolean :featured
 
       t.timestamps
