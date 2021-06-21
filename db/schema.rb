@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 2021_06_19_230057) do
     t.string "category"
     t.integer "stock"
     t.boolean "featured"
+    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
