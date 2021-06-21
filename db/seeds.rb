@@ -13,11 +13,13 @@ Image.destroy_all
 
 brian = User.create!(
     email: 'bpsahota@gmail.com',
+    name: 'brian sahota',
     password: "hehe"
 )
 
 brian2 = User.create!(
     email: 'pbond22@hotmail.com',
+    name: 'mister sahota man',
     password: 'haha'
 )
 
