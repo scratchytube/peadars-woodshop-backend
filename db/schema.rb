@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2021_06_19_230057) do
   end
 
   create_table "orders", force: :cascade do |t|
-    t.string "user_id"
+    t.integer "user_id"
     t.boolean "checked_out"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

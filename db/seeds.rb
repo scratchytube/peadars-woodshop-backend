@@ -86,8 +86,17 @@ Image.create!(product_id: prod11.id, url: 'https://i.imgur.com/2BrOedG.jpg')
 
 
 order1 = Order.create!(user_id: brian.id, checked_out: false)
+order2 = Order.create!(user_id: brian.id, checked_out: true)
+
+order3 = Order.create!(user_id: brian2.id, checked_out: true)
+order4 = Order.create!(user_id: brian2.id, checked_out: false)
 
 
-productOrder1 = ProductOrder.create!(product_id: prod1.id, order_id: order1.id,)
+productOrder1 = ProductOrder.create!(product_id: prod1.id, order_id: order1.id)
+productOrder2 = ProductOrder.create!(product_id: prod4.id, order_id: order1.id)
+productOrder3 = ProductOrder.create!(product_id: prod7.id, order_id: order2.id)
+
+productOrder4 = ProductOrder.create!(product_id: prod5.id, order_id: order3.id)
+productOrder5 = ProductOrder.create!(product_id: prod5.id, order_id: order4.id)
 
 # prod1 = Product.create!(name: '', price: 20000, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", category: "", stock: 1, featured: false)
