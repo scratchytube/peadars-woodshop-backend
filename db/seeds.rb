@@ -93,7 +93,6 @@ order4 = Order.create!(user_id: brian2.id, checked_out: false)
 
 
 productOrder1 = ProductOrder.create!(product_id: prod1.id, order_id: order1.id, quantity: 2)
-productOrder2 = ProductOrder.create!(product_id: prod4.id, order_id: order1.id, quantity: 1)
 productOrder3 = ProductOrder.create!(product_id: prod7.id, order_id: order2.id, quantity: 2)
 
 productOrder4 = ProductOrder.create!(product_id: prod5.id, order_id: order3.id, quantity: 2)
