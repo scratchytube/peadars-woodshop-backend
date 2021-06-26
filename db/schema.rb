@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 2021_06_19_230057) do
   create_table "product_orders", force: :cascade do |t|
     t.integer "product_id"
     t.integer "order_id"
+    t.integer "quantity"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -44,7 +45,6 @@ ActiveRecord::Schema.define(version: 2021_06_19_230057) do
     t.integer "stock"
     t.boolean "featured"
     t.string "image"
-    t.integer "amount"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

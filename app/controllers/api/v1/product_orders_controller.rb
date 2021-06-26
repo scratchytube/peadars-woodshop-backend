@@ -32,7 +32,7 @@ class Api::V1::ProductOrdersController < ApplicationController
     end
 
     def productOrder_params
-        params.permit(:product_id, :order_id)
+        params.permit(:product_id, :order_id, :quantity)
     end
 
 
