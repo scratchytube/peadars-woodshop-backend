@@ -8,6 +8,7 @@ class CreateProducts < ActiveRecord::Migration[6.0]
       t.integer :stock
       t.boolean :featured
       t.string :image
+      t.integer :amount
 
       t.timestamps
     end
