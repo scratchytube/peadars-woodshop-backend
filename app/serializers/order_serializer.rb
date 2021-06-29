@@ -1,5 +1,5 @@
 class OrderSerializer < ActiveModel::Serializer
-  attributes :id, :user_id, :checked_out, :quantity
+  attributes :id, :user_id, :checked_out
 
   belongs_to :user
   has_many :product_orders

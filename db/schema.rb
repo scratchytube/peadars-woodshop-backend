@@ -23,15 +23,15 @@ ActiveRecord::Schema.define(version: 2021_06_19_230057) do
   end
 
   create_table "orders", force: :cascade do |t|
-    t.integer "user_id", null: false
+    t.integer "user_id"
     t.boolean "checked_out"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "product_orders", force: :cascade do |t|
-    t.integer "product_id", null: false
-    t.integer "order_id", null: false
+    t.integer "product_id"
+    t.integer "order_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

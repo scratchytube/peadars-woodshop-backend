@@ -26,20 +26,20 @@ before_action :set_order, only: [:show, :update, :delete]
         render json: { message: ":(" }
     end
 
-    def newOrder
-        product_1 = Product.find(order_params[:product_id])
-        quantity_1 = order_params[:quantity]
+    # def newOrder
+    #     product_1 = Product.find(order_params[:product_id])
+    #     quantity_1 = order_params[:quantity]
 
-        order = Order.create!(user_id: order_params[:user_id])
-        product_order = ProductOrder.create!(
-            order_id: order.id, 
-            product_id: order_params[:product_id], 
-            quantity: order_params[:quantity]
-        )
-        user = User.find(order_params[:user_id])
-        user.update(current_order: order.id)
+    #     order = Order.create!(user_id: order_params[:user_id])
+    #     product_order = ProductOrder.create!(
+    #         order_id: order.id, 
+    #         product_id: order_params[:product_id], 
+    #         quantity: order_params[:quantity]
+    #     )
+    #     user = User.find(order_params[:user_id])
+    #     user.update(current_order: order.id)
 
-    end
+    # end
 
     private 
 
@@ -48,7 +48,7 @@ before_action :set_order, only: [:show, :update, :delete]
     end
 
     def orders_params 
-        params.permit(:user_id, :checked_out, :quantity)
+        params.permit(:user_id, :checked_out)
     end
 
 end
