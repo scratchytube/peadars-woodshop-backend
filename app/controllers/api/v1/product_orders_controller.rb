@@ -22,7 +22,7 @@ class Api::V1::ProductOrdersController < ApplicationController
 
     def delete 
         @productOrder.destroy 
-        render json: { message: ":(" }
+        render json: @productOrder
     end
 
     private 
