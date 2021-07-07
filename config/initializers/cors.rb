@@ -7,7 +7,10 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins '*'
+    origins: {
+      ['https://peadars-woodshop.netlify.app', 'http://localhost:3000']
+    }
+    #'*'
     # 'https://peadars-woodshop.netlify.app', 'http://localhost:3000' when you deploy make sure you change this to forntend domain name eg. origins 'briansahotahehe.com'
 
     resource '*',
