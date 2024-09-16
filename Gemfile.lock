@@ -77,7 +77,8 @@ GEM
       dotenv (= 2.8.1)
       railties (>= 3.2)
     erubi (1.13.0)
-    ffi (1.17.0-aarch64-linux-gnu)
+    ffi (1.17.0-aarch64-linux)
+    ffi (1.17.0-arm64-darwin)
     globalid (1.1.0)
       activesupport (>= 5.0)
     i18n (1.14.5)
@@ -112,6 +113,8 @@ GEM
       net-protocol
     nio4r (2.7.3)
     nokogiri (1.16.7-aarch64-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.7-arm64-darwin)
       racc (~> 1.4)
     pg (1.5.8)
     puma (4.3.12)
@@ -176,7 +179,8 @@ GEM
     zeitwerk (2.6.18)
 
 PLATFORMS
-  aarch64-linux-gnu
+  aarch64-linux
+  arm64-darwin-23
 
 DEPENDENCIES
   active_model_serializers (~> 0.10.12)
@@ -195,7 +199,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 3.0.0p0
+   ruby 3.0.7p220
 
 BUNDLED WITH
    2.5.18
